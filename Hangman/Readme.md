@@ -11,7 +11,7 @@
 
 <h3 align="left">How to play it :</h3>
   <pre>
-  1. Enter the Letter to guess the word.
+  1. Enter the letter to guess the word.
   2. U have 5 chances to guess the correct word else the game gets over.
   3. If guessed the word correctly , player wins.
   </pre>
