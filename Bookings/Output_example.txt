@@ -1,0 +1,85 @@
+Enter person's name : a b c d e
+Enter book's name : 1 2 3 4 5
+
+1. Book the slot. 
+2. Check book's booking.
+3. Person booking
+4. Quit
+
+Enter the number : 1
+Enter person and book : a 2
+Booked slot for book 2 by person a is 1st Nov - 7th Nov
+
+1. Book the slot. 
+2. Check book's booking.
+3. Person booking
+4. Quit
+
+Enter the number : 1
+Enter person and book : d 2
+Booked slot for book 2 by person d is 8th Nov - 14th Nov
+
+1. Book the slot. 
+2. Check book's booking.
+3. Person booking
+4. Quit
+
+Enter the number : 1
+Enter person and book : c 2
+Booked slot for book 2 by person c is 15th Nov - 21st Nov
+
+1. Book the slot. 
+2. Check book's booking.
+3. Person booking
+4. Quit
+
+Enter the number : 1
+Enter person and book : e 2
+Booked slot for book 2 by person e is 22nd Nov - 28th Nov
+
+1. Book the slot. 
+2. Check book's booking.
+3. Person booking
+4. Quit
+
+Enter the number : 1
+Enter person and book : b 2
+Bookings are full.
+
+1. Book the slot. 
+2. Check book's booking.
+3. Person booking
+4. Quit
+
+Enter the number : 1
+Enter person and book : a 4
+Booked slot for book 4 by person a is 1st Nov - 7th Nov
+
+1. Book the slot. 
+2. Check book's booking.
+3. Person booking
+4. Quit
+
+Enter the number : 2
+Enter book name : 2
+Person a : 1st Nov - 7th Nov
+Person d : 8th Nov - 14th Nov
+Person c : 15th Nov - 21st Nov
+Person e : 22nd Nov - 28th Nov
+
+1. Book the slot. 
+2. Check book's booking.
+3. Person booking
+4. Quit
+
+Enter the number : 3
+Enter person name : a
+Book name : 2 -- Slot : 1st Nov - 7th Nov
+Book name : 4 -- Slot : 1st Nov - 7th Nov
+
+1. Book the slot. 
+2. Check book's booking.
+3. Person booking
+4. Quit
+
+Enter the number : 4
