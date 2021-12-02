@@ -1,0 +1,82 @@
+
+-- Query 1
+CREATE TABLE User (
+    uid INTEGER PRIMARY KEY AUTOINCREMENT ,
+  	name varchar(255) NOT NULL ,
+  	gender CHAR(6) CHECK(gender IN ('Male', 'Female')),
+  	email varchar(255) UNIQUE 
+);
+
+
+-- Query 2
+CREATE TABLE Event (
+    id INTEGER PRIMARY KEY AUTOINCREMENT ,
+    uid INTEGER NOT NULL ,
+    name varchar(255) NOT NULL ,
+    occurence CHAR(7) CHECK(occurence IN ('YEARLY','ONETIME')),
+    startDate date NOT NULL ,
+    endDate date
+);
+
+
+-- Query 3
+INSERT INTO User(name,gender,email)
+VALUES 
+("Hiren","Male","hirenprajapati7033@gmail.com"),
+("Daksh","Male","dakshprajapati493@gmail.com"),
+("Siddhi", 'Female',"siddhi5434@gmail.com"),
+("Ashwin","Male","Ash59@gmail.com"),
+("Vidhi", 'Female',"vidhi619@gmail.com");
+
+
+
+-- Query 4
+INSERT into Event(uid,name,occurence,startDate,endDate)
+VALUES 
+(1,"ABC","YEARLY","2021-11-01","2021-11-04"),
+(2,"BCD","YEARLY","2021-11-03","2021-11-06"),
+(3,"CDE","ONETIME","2021-11-06","2021-11-09"),
+(4,"DEF","YEARLY","2021-11-09","2021-11-12"),
+(5,"EFG","YEARLY","2021-11-12","2021-11-15"),
+(6,"FGH","ONETIME","2021-11-15","2021-11-18"),
+(7,"GHI","ONETIME","2021-11-18","2021-11-21"),
+(8,"HIJ","YEARLY","2021-11-21","2021-11-24"),
+(9,"IJK","ONETIME","2021-11-24","2021-11-27"),
+(10,"JKL","YEARLY","2021-11-27","2021-11-30"),
+(11,"KLM","YEARLY","2021-12-01","2021-12-04"),
+(12,"LMN","ONETIME","2021-12-03","2021-12-06"),
+(13,"MNO","YEARLY","2021-12-06","2021-12-09"),
+(14,"NOP","ONETIME","2021-12-09","2021-12-12"),
+(15,"OPQ","ONETIME","2021-12-12","2021-12-15"),
+(16,"PQR","YEARLY","2021-12-15","2021-12-18"),
+(17,"QRS","YEARLY","2021-12-18","2021-12-21"),
+(18,"RST","ONETIME","2021-12-21","2021-12-24"),
+(19,"STU","YEARLY","2021-12-24","2021-12-27"),
+(20,"TUV","ONETIME","2021-12-27","2021-12-30");
+
+
+
+-- Query 5
+select * from event 
+where startdate <= '2021-11-28' and enddate >= '2021-11-28';
+
+
+-- Query 6 
+SELECT * from Event 
+where uid IN (1,2,6,8,9);
+
+
+-- Query 7 
+SELECT * from Event 
+where uid = 1 ;
+
+
+-- Query 8
+select  * from event
+where  startdate <= '2021-11-29' and enddate >= '2021-11-29'
+   Or  startdate <= '2021-11-30' and enddate >= '2021-11-30'
+   Or  startdate <= '2021-12-01' and enddate >= '2021-12-01'
+   Or  startdate <= '2021-12-02' and enddate >= '2021-12-02'
+   Or  startdate <= '2021-12-03' and enddate >= '2021-12-03'
+   Or  startdate <= '2021-12-04' and enddate >= '2021-12-04'
+   Or  startdate <= '2021-12-05' and enddate >= '2021-12-05';
