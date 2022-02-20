@@ -116,3 +116,5 @@ while run:
     wordform = stri
     func()
 
+    
+    
